@@ -1,0 +1,217 @@
+.footer-bigbox {
+    display: flex ;
+	flex-direction: column ;
+	font-family: var(--monstserrat) ;
+}
+
+.footer-upbox {
+    padding: 0px 80px;
+}
+
+.title-redes{
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5px;
+
+}
+	
+.imagen-logo-footer{
+    display: flex;
+	align-items: center;
+
+}
+.subtitle-footer {
+    font-family: var(--playfair);
+	font-weight: 900 ;
+	font-style: italic ;
+	font-size: 50px ;
+	color: black ;
+
+}
+
+.subtitle-footer2 {
+    font-family: var(--playfair);
+	font-weight: 900 ;
+	font-style: italic ;
+	font-size: 50px ;
+	color: black ;
+	margin-left: 40px;
+
+}
+
+.followus {
+	font-size: 20px ;
+	color: black ;
+}
+
+.linea-footer {
+	border-style: dashed ;
+
+}
+
+.footer-bottombox {
+	padding: 40px 80px 30px 80px; 
+	display: flex ;
+	justify-content: space-between ;
+	background: var(--lightblue) ;
+	font-size: 10px ;
+	color: black ;
+
+}
+
+
+.roboto-1 {
+	font-family: "Roboto", serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	font-variation-settings:
+	  "wdth" 100;
+  }
+
+  
+  .izquierda {
+	width: 50%; /* o cualquier otro porcentaje o medida */
+	
+	padding-left: 200px;
+  }
+
+  #contenedor {
+	width: 100%;
+	height: 150px; /* O la altura que necesites */
+	display: flex; /* Usamos Flexbox para el contenedor principal para facilitar el cambio a columna en pantallas pequeñas */
+	flex-direction: row; /* Por defecto, las columnas estarán en fila */
+  }
+  
+  .columna {
+	width: 50%; /* Por defecto, cada columna ocupa la mitad del ancho */
+	box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho */
+  }
+
+  .derecha {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;   /* Centrado vertical */
+	align-items: center;       /* Centrado horizontal */
+	height: 100%;              /* Asegura que ocupe toda la altura del contenedor padre */
+	text-align: center;  
+	margin-right: 20px;      /* Centra el texto también AQUIIII*/ 
+}
+  
+  .redes-footer {
+	display: flex; /* Para centrar los iconos horizontalmente */
+	justify-content: center; /* Centra los elementos hijos horizontalmente */
+	/* Otros estilos para redes-footer */
+  }
+  
+  .contenedor-flex {
+	display: flex; /* Para alinear los iconos en fila */
+	gap: 20px; /* Espacio entre los iconos */
+  }
+  
+  .redes a {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  .ig {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+  }
+  
+  /* Media Query para pantallas más pequeñas (ejemplo: 768px de ancho máximo) */
+  @media (max-width: 768px) {
+	#contenedor {
+	  flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+	  height: auto; /* Ajusta la altura automáticamente según el contenido */
+	}
+  
+	.columna {
+	  width: 100%; /* Las columnas ahora ocupan todo el ancho */
+	}
+  
+	.derecha {
+	  align-items: center; /* Centra el contenido de la derecha también en pantallas pequeñas */
+	}
+
+	.izquierda {
+		padding-left: 30%;
+	  }
+  }
+
+  @media all and (max-width: 414px){
+	#contenedor {
+		flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+		height: auto; /* Ajusta la altura automáticamente según el contenido */
+	  }
+	
+	  .columna {
+		width: 100%; /* Las columnas ahora ocupan todo el ancho */
+	  }
+	
+	  .derecha {
+		align-items: center; /* Centra el contenido de la derecha también en pantallas pequeñas */
+	  }
+  
+	  .izquierda {
+		  padding-left: 20%;
+		}
+
+  }
+	@media all and (max-width: 375px){
+		#contenedor {
+			flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+			height: auto; /* Ajusta la altura automáticamente según el contenido */
+		  }
+		
+		  .columna {
+			width: 100%; /* Las columnas ahora ocupan todo el ancho */
+		  }
+		
+		  .derecha {
+			align-items: center; /* Centra el contenido de la derecha también en pantallas pequeñas */
+		  }
+	  
+		  .izquierda {
+			  padding-left: 15%;
+			}
+
+			.redes-footer {
+				display: flex; /* Para centrar los iconos horizontalmente */
+				justify-content: center;
+				font-size: 13px;
+			  }
+
+	}
+	@media all and (max-width: 320px){
+		#contenedor {
+			flex-direction: column; /* Cambia la dirección a columna para apilar los elementos */
+			height: auto; /* Ajusta la altura automáticamente según el contenido */
+		  }
+		
+		  .columna {
+			width: 100%; /* Las columnas ahora ocupan todo el ancho */
+		  }
+		
+		  .derecha {
+			align-items: center; /* Centra el contenido de la derecha también en pantallas pequeñas */
+		  }
+	  
+		  .izquierda {
+			  padding-left: 10%;
+			}
+
+			.redes-footer {
+				display: flex; /* Para centrar los iconos horizontalmente */
+				justify-content: center;
+				font-size: 10px;
+			  }
+		
+	}
+  

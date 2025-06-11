@@ -1,0 +1,132 @@
+.text-overlay{
+
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+.image-container {
+    position: relative; /* Make the container relative for absolute positioning */
+    overflow: hidden; /* Prevent text from overflowing the image container */
+    margin-top: 55px;
+  }
+  
+  .img {
+    height: 500px; /* Adjust height as needed */
+    display: block;
+    margin: auto;
+    
+  }
+  
+  .text1 {
+    position: absolute;
+    bottom: 200px; /* Position at the top of the image */
+    right: 299px; /* Position at the left of the image */
+    width: 100%; /* Stretch the overlay to cover the entire image */
+    height: 100%; /* Stretch the overlay to cover the entire image */
+    display: flex; /* Allow for flexible text alignment */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    color: rgb(255, 255, 255);
+    font-size: 350%;
+  }
+  
+  .text2 {
+    position: absolute;
+    bottom: 130px; /* Position at the top of the image */
+    right: 250px; /* Position at the left of the image */
+    width: 100%; /* Stretch the overlay to cover the entire image */
+    height: 100%; /* Stretch the overlay to cover the entire image */
+    display: flex; /* Allow for flexible text alignment */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    color: rgb(255, 255, 255);  
+    font-size: 340%;
+  }
+
+.poema{
+    position: absolute;
+    top: 150px; /* Position at the top of the image */
+    left: 0px; /* Position at the left of the image */
+    margin-right: 0px;
+    width: 160%; /* Stretch the overlay to cover the entire image */
+    height: 100%; /* Stretch the overlay to cover the entire image */
+    display: flex; /* Allow for flexible text alignment */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center the text vertically */
+    color: rgb(255, 255, 255); 
+    font-size: 15px;
+}
+
+
+/* Estilos Responsive */
+@media (max-width: 1024px) {
+  .text1 {
+    bottom: 150px;
+    right: 200px;
+    font-size: 250%;
+  }
+
+  .text2 {
+    bottom: 100px;
+    right: 180px;
+    font-size: 240%;
+  }
+
+  .poema {
+    top: 120px;
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .text1 {
+    bottom: 120px;
+    right: 100px;
+    font-size: 200%;
+  }
+
+  .text2 {
+    bottom: 80px;
+    right: 90px;
+    font-size: 190%;
+  }
+
+  .poema {
+    top: 100px;
+    font-size: 13px;
+    width: 90%;
+    left: 5%;
+  }
+
+  .img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text1 {
+    bottom: 120px;
+    right: 120px;
+    font-size: 150%;
+  }
+
+  .text2 {
+    bottom: 85px;
+    right: 109px;
+    font-size: 140%;
+  }
+
+  .poema {
+    top: 80px;
+    font-size: 12px;
+    width: 85%;
+    left: 7.5%;
+  }
+
+  .img {
+    height: 300px;
+  }
+}
